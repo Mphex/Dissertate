@@ -2,6 +2,11 @@
 output: pdf_document
 ---
 
+```{r, echo=FALSE}
+knitr::opts_chunk$set(error = TRUE)
+```
+
+
 \begin{quote}
 \emph{The power of intuitive understanding will protect you from harm until the end of your days.}
 --- Lao Tzu
@@ -29,7 +34,7 @@ library(tidyverse)
 library(furniture)
 
 ## Load data
-load("Data/NSDUH_2014/Data/NSDUH_2014.rda")
+load("Data/NSDUH_2014_Results.rda")
 d = da36361.0001
 names(d) = tolower(names(d))
 rm(da36361.0001)

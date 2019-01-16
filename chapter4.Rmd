@@ -86,7 +86,7 @@ Y_{i} = \beta_0 + b M_{i} + c^{'} x_{i} + \epsilon_{yi}
 ```{r, message=FALSE, results='hide', warning=FALSE}
 options(xtable.comment = FALSE)
 library(readr)
-tab = read_csv("~/Dropbox/1 Dissertation/Manuscript_MM/Data/ConditionsTable.csv")
+tab = read_csv("C:/Users/User/Documents/DissertateGitUCU/Dissertate/ConditionsTable.csv")
 names(tab) = c("Independent Variables", "Conditions")
 tab[4,2] = c(".30")
 tab[7,2] = c("90")
@@ -128,13 +128,13 @@ Notably, the effect sizes for both the binary mediator and count mediator (a pat
 \caption{The effect sizes of the a and b paths in the Monte Carlo Simulation.} 
 \label{effectsizes}
 \begin{tabular}{lccc}
-\toprule
+%\toprule
 Size & Odds Ratio (a path) & Risk Ratio (a path) & r (b path) \\ 
-\midrule
+%\midrule
 Small    & 1.58 & 1.34 & 0.10 \\ 
 Moderate & 3.44 & 1.82 & 0.30 \\
 Large    & 6.73 & 3.01 & 0.50 \\ 
-\bottomrule
+%\bottomrule
 \end{tabular}
 \end{table}
 
